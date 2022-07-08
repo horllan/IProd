@@ -8,7 +8,7 @@ const {productList, setProductList} = useSharedState()
 
   function deleteProduct(productToDelete) {
     setProductList(productList.filter(product => product.productName !== productToDelete));
-    <Modal message="item removed"/>
+    
   }
   return (
     <div>

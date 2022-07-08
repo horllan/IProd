@@ -12,15 +12,18 @@ export default function Home() {
   }
   const handleSubmit =(e)=>{
     e.preventDefault();
-    // const newProduct = { id : Date.now().toString(), ...product}
-    // const {productName, productPrice, productInfo} = product
-    // setProductList([...productList, newProduct])
-    // if(productName && productPrice && productInfo) {
-    // setProduct(details);
-    <Modal message="welcome"/>
-    // <Modal message="goodbye" />
+    const newProduct = { id : Date.now().toString(), ...product}
+     const {productName, productPrice, productInfo} = product
+    if (productName && productPrice && productInfo) {
+      
+
+     setProductList([...productList, newProduct])
+     
+    setProduct(details);
+  
+
     };
-  // }
+   }
   return (
     <div>
       <h4 className="center teal-text">IProd Home page</h4>
@@ -44,4 +47,4 @@ export default function Home() {
       </form>
     </div >
   )
-}
+  }
